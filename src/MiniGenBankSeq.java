@@ -11,7 +11,7 @@ public class MiniGenBankSeq {
 	
 	public String getLocus(){
 		if (locus==null) {
-			System.out.println("Error, locus not initialized.");
+			return("Error, locus not initialized.");
 		} else {
 		return locus;
 		}
@@ -23,7 +23,7 @@ public class MiniGenBankSeq {
 	
 	public String getAccess(){
 		if (accession==null) {
-			System.out.println("Error, accession not initialized.");
+			return("Error, accession not initialized.");
 		} else {
 		return accession;
 		}
