@@ -17,7 +17,7 @@ public abstract class SequenceLoader {
 
 	/**
 	 * sets this instance's sequence to the indicated sequence
-	 * 
+	 * (example of a setter method)
 	 * @param s
 	 *            the new sequence
 	 */
