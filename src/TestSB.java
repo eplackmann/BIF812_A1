@@ -1,7 +1,6 @@
 
 public class TestSB {
 
-
 	public static void main(String[] args) {
 		StringBuilderMiniGenBankSeq test = new StringBuilderMiniGenBankSeq();
 		long nanoseconds = test.testConcatenate(100);
