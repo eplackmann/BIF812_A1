@@ -1,5 +1,5 @@
 
-public class MiniGenBankSeq {
+public class MiniGenBankSeq extends SequenceLoader{
 	
 	// Initial declaration of arguments in class
 	private String locus;
@@ -79,4 +79,9 @@ public class MiniGenBankSeq {
 		return "Locus:" + getLocus() + "\tAccession: " + getAccess() + "\tDefinition: " + getDef() +
 				"\tSource: " + getSource();
 	}
+	
+	//PART B
+	
+	
+	
 }

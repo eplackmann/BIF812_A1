@@ -6,7 +6,7 @@
  * @author Eric Plackmann
  *
  */
-public class UseMiniGenBankSeq {
+public class UseMiniGenBankSeq{
 
 	public static void main(String[] args) {
 		
