@@ -3,7 +3,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import javax.swing.JFileChooser;
-
 /**
  * This class loads sequence data from a file.
  * @author marek

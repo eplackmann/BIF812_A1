@@ -6,7 +6,6 @@ public class StringBuilderMiniGenBankSeq extends SequenceLoader{
 		StringBuilder sb = new StringBuilder(sequence);
 		for(int i=0;i<times;i++){
 			System.out.println("Concatenating using Stringbuilder; time "+ i + " of "+times);
-			//sequence = sequence + s; //this was the old test
 			sb.append(s);
 		}
 		sequence = sb.toString();
