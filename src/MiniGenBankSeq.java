@@ -81,7 +81,15 @@ public class MiniGenBankSeq extends SequenceLoader{
 	}
 	
 	//PART B
+	// Standard concatenation
+	@Override
+	public void concatenate(String s, int times) {
+
+		for(int i=0;i<times;i++){
+			System.out.println("Concatenating using += ; time "+ i + " of "+times);
+			sequence += s;
+		}
+		sequence = sequence.toString();
 	
-	
-	
+	}	
 }
