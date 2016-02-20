@@ -15,10 +15,10 @@ public class StringWriterMiniGenBankSeq extends SequenceLoader{
 	
 	@Override
 	public void concatenate(String s, int times) {
-		StringWriter stringw = new StringWriter();
+		StringWriter stringw = new StringWriter(); // New stringwriter instance stringw
 		for( int i=0; i<times; i++ ){
 			System.out.println("Concatenating using StringWriter method ; " + i + "/" + times);
-			stringw.append(s);
+			stringw.append(s); // stringwriter specific concatenation method
 		}
 	
 	}

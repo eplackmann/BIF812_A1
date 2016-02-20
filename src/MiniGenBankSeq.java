@@ -93,10 +93,10 @@ public class MiniGenBankSeq extends SequenceLoader{
 	}
 	
 	//PART B
-	// Standard concatenation using +=
+	// Standard concatenation using += and display of iteration
 	@Override
 	public void concatenate(String s, int times) {
-
+		
 		for( int i=0; i<times; i++ ){
 			System.out.println("Concatenating using += ; " + i + "/" + times);
 			sequence += s;

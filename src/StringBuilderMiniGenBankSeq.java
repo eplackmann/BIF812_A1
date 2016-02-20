@@ -13,10 +13,10 @@ public class StringBuilderMiniGenBankSeq extends SequenceLoader{
 	
 	@Override
 	public void concatenate(String s, int times) {
-		StringBuilder stringb = new StringBuilder();
+		StringBuilder stringb = new StringBuilder(); //New string builder instance stringb
 		for( int i=0; i<times; i++ ){
 			System.out.println("Concatenating using StringBuilder method ; " + i + "/" + times);
-			stringb.append(s);
+			stringb.append(s); // stringbuilder specific concatenation method
 		}
 	
 	}
