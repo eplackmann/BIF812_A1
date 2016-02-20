@@ -1,12 +1,22 @@
+/**
+ * @class TestSB.java
+ * @author Eric Plackmann
+ * @course BIF 724-161
+ * @purpose This class contains the main method required to call the concatenation method in 
+ * StringBuilderMiniGenBankSeq.java
+ * @oath I declare that the attached assignment is my own work in accordance with Seneca Academic
+ * Policy. No part of this assignment has been copied manually or electronically from any other
+ * source (including web sites) or distributed to other students.
+ * Name: Eric Plackmann 023 893 159
+ **/
 
 public class TestSB {
 
 	public static void main(String[] args) {
-		StringBuilderMiniGenBankSeq test = new StringBuilderMiniGenBankSeq();
-		long nanoseconds = test.testConcatenate(100);
-		double seconds = nanoseconds / (double)1000000000; 
-		System.out.println("concatenating using StringBuilder took " + seconds + " seconds");
-
+		StringBuilderMiniGenBankSeq test = new StringBuilderMiniGenBankSeq(); //Instantiates new object
+		long nseconds = test.testConcatenate(10); // gets runtime returned from SequenceLoader testConcatenate method(x times)
+		double seconds = nseconds / (double)1000000000; // converts runtime to seconds
+		System.out.printf("Concatenating using StringBuilder took %f seconds.", seconds);
 	}
 
 }

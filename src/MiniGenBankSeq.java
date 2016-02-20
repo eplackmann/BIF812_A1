@@ -1,3 +1,14 @@
+/**
+ * @class MiniGenBankSeq.java
+ * @author Eric Plackmann
+ * @course BIF 724-161
+ * @purpose This class creates MiniGenBank objects using varying argument constructors (Part A) and 
+ * runs a string concatenation using the standard += method (Part B)
+ * @oath I declare that the attached assignment is my own work in accordance with Seneca Academic
+ * Policy. No part of this assignment has been copied manually or electronically from any other
+ * source (including web sites) or distributed to other students.
+ * Name: Eric Plackmann 023 893 159
+ **/
 
 public class MiniGenBankSeq extends SequenceLoader{
 	
@@ -74,6 +85,7 @@ public class MiniGenBankSeq extends SequenceLoader{
 		this(newLocus, newAccess, null, null);
 	}	
 	
+	// Displays the informations stored in the object
 	@Override
 	public String toString(){
 		return "Locus:" + getLocus() + "\tAccession: " + getAccess() + "\tDefinition: " + getDef() +
@@ -81,15 +93,14 @@ public class MiniGenBankSeq extends SequenceLoader{
 	}
 	
 	//PART B
-	// Standard concatenation
+	// Standard concatenation using +=
 	@Override
 	public void concatenate(String s, int times) {
 
-		for(int i=0;i<times;i++){
-			System.out.println("Concatenating using += ; time "+ i + " of "+times);
+		for( int i=0; i<times; i++ ){
+			System.out.println("Concatenating using += ; " + i + "/" + times);
 			sequence += s;
 		}
-		sequence = sequence.toString();
 	
 	}	
 }
